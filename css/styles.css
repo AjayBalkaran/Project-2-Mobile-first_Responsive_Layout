@@ -1,0 +1,412 @@
+/*General
+===============================*/
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway, sans-serif";
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+ img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Typography
+===============================*/
+h1,
+h2,
+.main-nav a {
+    font-weight: 900;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 2em
+}
+
+p,
+.aboutme li {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.main-nav a {
+    font-size: 1em;
+}
+
+.portfolio-item-title {
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.content-footer {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+/*Text Transformations */
+a,
+h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.25em;
+    padding-top: 1em
+}
+
+/*--List Items--*/
+.main-nav li {
+    margin: .75em;
+    padding: .75em;
+    background: #ffff;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Header
+===============================*/
+.content-header {
+    margin: 0 auto;
+}
+
+.main-nav {
+ margin-left: 1.1em;
+ margin-right: 1.1em; 
+}
+
+.main-nav a {
+    display: block;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.header-student-name {
+    color: steelblue;
+}
+
+/*Intro
+===============================*/
+.student-profile {
+    display: block;
+    margin: 3em auto 2em;
+    width: 60%;
+}
+
+.intro-text {
+    margin: 2em 1.1em 2.6em;
+}
+
+/*Skills
+===============================*/
+.aboutme {
+    margin: 0 auto;
+    padding: 2em 0; 
+    background-color: whitesmoke;
+}
+
+.container-skills {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content-hard-skills,
+.content-soft-skills {
+    width: 50%;
+    float: left;
+}
+
+.skills-item {
+    padding: 1.5em .2em 2em;
+}
+
+/*Portfolio
+===============================*/
+.portfolio-item {
+    margin: 0;
+}
+
+.content-portfolio {
+    background: #ffff;
+    padding: 1em 1em 2.5em;
+}
+
+.portfolio-title {
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+}
+
+.portfolio-item-title {
+    margin-top: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.portfolio-description {
+    margin: 0 .9em 2.15em;
+}
+
+
+/*Contact
+===============================*/
+
+.content-contact {
+    margin: 4.5em 1.5em 7em;
+}
+
+.contact-title {
+    display: block;
+    margin: 3.5em 0 2.5em;;
+}
+
+.contact-blurb {
+    padding-bottom: 2em;
+}
+
+.email-link,
+.phone-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-transform: none;
+}
+
+/*Footer
+===============================*/
+
+.content-footer {
+    width: 90%;
+    margin: 1.5em auto;
+}
+
+.container ul {
+    display: flex;
+}
+
+
+.footer-student-name {
+    display: block;
+    margin-right: auto;
+}
+
+footer .desk-view {
+    display: none;
+}
+
+
+/*Clearfix
+===============================*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*tablet size (768px)
+===============================*/
+
+@media (min-width:48rem) {
+
+    /*=========Header=============*/
+
+    .content-header {
+        background-color: lightgray;
+        padding-top: 1em;
+    }
+
+    .header-student-name {
+        margin-top: 1.8em;
+        margin-bottom: .2em;
+        font-size: 2.7em;
+    }
+
+    .main-nav li {
+        background:none;
+        display: inline-block;
+        padding: 1.5em 1.7em 2em;
+        font-size: 1.2em;
+        margin: 0;
+        /* border: red solid 1px; */
+    }
+
+    /*=========Intro=============*/
+
+    .content-intro {
+        width: 95%;
+        margin: 0 auto 2em;
+    }
+    .student-profile {
+        float: right;
+        width: 41%;
+        margin-top: 1em; 
+    }
+    
+    .intro-text {
+        float: left;
+        text-align: left;
+        width: 57.5%;
+        margin: 1.2em 0 0;
+    }
+
+    /*=========Skills===========*/
+    .aboutme {
+        width: 95%;
+    }
+
+    .skills-item {
+        width: 33.33333333%;
+        float: left;
+    }
+
+    .content-skils-list{
+        width: 90%;
+        margin: 0 auto;
+        border: green 1px solid;
+    }
+
+    /*=========Portfolio===========*/
+
+    .portfolio-item {
+        width: 50%;
+        float: left;
+        padding: .5em;
+    }
+
+    .portfolio-description {
+        margin: 0 1em 3em;
+        font-size: 1.2em;
+    }
+
+    .content-portfolio {
+        padding-bottom: 1em;
+    }
+
+
+    /*=========Contact=============*/
+
+    .content-contact {
+        margin: 2em 1.5em 7em;
+    }
+
+    .contact-title {
+        display: block;
+        margin: 0 0 2em;
+    }
+
+    .contact-blurb {
+        width: 76%;
+        margin: 0 auto;
+    }
+
+    .phone-link {
+        color: currentColor;
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+    }
+
+    /*=========Footer=============*/
+
+    .footer-line {
+        margin-bottom: 1.7em;
+    }
+
+    .footer-student-name {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    footer .mobile-view {
+        display: none;
+    }
+
+    footer .desk-view {
+        display: flex;
+    }
+
+    footer li {
+        margin-left: 1em;
+        font-size: .9rem;
+    }
+
+    .content-footer {
+        margin-bottom: 4em;
+    }
+}
+
+/* Desktop format (1024px)
+================================*/
+
+@media (min-width: 64rem) {
+    /*=========Header=============*/
+    .content-header {
+        width: 90%;
+        margin-top: 2.5em;
+        background-color: #f9f9f9;
+    }
+
+    .header-student-name {
+        float: left;
+        margin: 0;
+    }
+
+    .main-nav {
+        float: right;
+        margin: 0;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        padding-right: 0;
+    }
+
+    /*=========Intro=============*/
+    .content-intro {
+        width: 90%;
+    }
+    .intro-text {
+        width: 54%;
+    }
+    
+    /*=========Portfolio===========*/
+
+    .content-portfolio {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .portfolio-item {
+        width: 33.3333%
+    }
+
+    .portfolio-description {
+        width: 96%;
+        margin: 0 auto 3em;
+        font-size: 1.19em;
+    }
+
+    /*=========Contact=============*/
+
+    .contact-blurb {
+        width: 56%;
+    }
+
+    /*=========Footer=============*/
+    .footer-line {
+        margin-bottom: 1.3em;   
+ }
+
+    .content-footer {
+        margin-bottom: 2em; 
+    }
+}
