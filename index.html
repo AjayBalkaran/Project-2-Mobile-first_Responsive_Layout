@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mobile-first Responcive Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="content-header clearfix">
+                <h1 class="header-student-name">Student Name</h1>
+
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#home-skills">skills</a></li>
+                        <li><a href="#home-portfolio">Portfolio</a></li>
+                        <li><a href="#home-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content-intro clearfix">
+            <img class="student-profile" src="images/responsive-layout-profile.png" alt="Student profile picture">
+
+            <p class="intro-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+
+        <div class="aboutme clearfix">
+                <h2 id="home-skills">Skills and Education</h2>
+               
+                <figure class="container-skills">
+                    <img src="images/Web-Developer-Skills.jpg" alt="Skills image">
+                    <figcaption>
+                        <p>A general statement about my skills that I would like to highlight .</p>
+                    </figcaption>
+                </figure>
+
+                <div class="content-skils-list">
+                    <div class="skills-item content-hard-skills">
+                        <h3>Hard skills</h3>
+                        <ul>
+                            <li>Hard Skill One</li>
+                            <li>Hard Skill Two</li>
+                            <li>Hard Skill Three</li>
+                        </ul>
+                    </div>    
+
+                    <div class="skills-item content-soft-skills">
+                        <h3>Soft skills</h3>
+                        <ul>    
+                            <li>Soft Skill One</li>
+                            <li>Soft Skill Two</li>
+                            <li>Soft Skill Three</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-item content-education">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>Education accomplishment One</li>
+                            <li>Education accomplishment Two</li>
+                            <li>Education accomplishment Three</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+        <div id="home-portfolio" class="content-portfolio clearfix">
+                <h2 class="portfolio-title">Portfolio</h2>
+    
+                <!--Profile Item 1: Marketing page-->
+                <figure class="portfolio-item marketing-page">
+                    <img src="images/portfolio-1.png" alt="Marketing Page portfolio image">
+                    <figcaption>
+                        <h3 class="portfolio-item-title">Marketing Page</h3>
+                        <p class="portfolio-description">This project shows the front page of a marketing website meant for a specific business I'm intrested in.</p> 
+                    </figcaption>
+                </figure>
+    
+               <!--Profile Item 2: Search Page-->
+               <figure class="portfolio-item search-page">
+                    <img src="images/portfolio-2.png" alt="Search Page portfolio image">
+                    <figcaption>
+                        <h3 class="portfolio-item-title">Search Page</h3>
+                        <p class="portfolio-description">This project searches through a specific database to find information that the user is trying to look up.</p> 
+                    </figcaption>
+                </figure>
+    
+               <!--Profile Item 3: Travel App-->
+               <figure class="portfolio-item travel-app">
+                    <img src="images/portfolio-3.png" alt="Travel App portfolio image">
+                    <figcaption>
+                        <h3 class="portfolio-item-title">Travel App</h3>
+                        <p class="portfolio-description">This project compares travel times based on different transportation methods and tells you the best one.</p> 
+                    </figcaption>
+                </figure>
+    
+               <!--Profile Item 4: Map of favorite Spots-->
+               <figure class="portfolio-item map-sport">
+                    <img src="images/portfolio-4.png" alt="Map of Favorite Spots portfolio image">
+                    <figcaption>
+                        <h3 class="portfolio-item-title">Map of Favorite Spots</h3>
+                        <p class="portfolio-description">This project used mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p> 
+                    </figcaption>
+               </figure>
+    
+               <!--Profile Item 5: Photo Gallery-->
+               <figure class="portfolio-item photo-gallery">
+                    <img src="images/portfolio-5.png" alt="Photo Gallery portfolio image">
+                    <figcaption>
+                        <h3 class="portfolio-item-title">Photo Gallery</h3>
+                        <p class="portfolio-description">This project shows pictures from a recent trip to the viewer and allowes them to easily navigate through photos.</p> 
+                    </figcaption>
+               </figure>
+    
+               <!--Profile Item 6: Calculator-->
+               <figure class="portfolio-item calculator">
+                    <img src="images/portfolio-6.png" alt="Calculator portfolio image">
+                    <figcaption>
+                        <h3 class="portfolio-item-title">Calculator</h3>
+                        <p class="portfolio-description">Someone can enter in the numbers they want, and press the big blue button and get the result.</p> 
+                    </figcaption>
+               </figure>
+            </div>
+
+        <div id="home-contact" class="content-contact">
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-blurb">If you're intrested in chatting or want more information about what i've been working on, I'd love to hear from you!</p>
+
+            <p>Phone: <a href="tel:+1111-555-1234" class="phone-link">+1(111) 555-1234</a></p>
+            <p>Email: <a href="mailto:email@yoursite.com? subject=Hi%20There!" class="email-link"> email@yoursite.com</a></p>
+        </div>
+
+        <footer>
+                <div class="container content-footer">
+                    <hr class="footer-line">
+                    <ul class="mobile-view">
+                        <li class="footer-student-name">Student name</li>
+                        <li><a href="#">BACK TO TOP</a></li>
+                    </ul>
+            
+                    <ul class="desk-view">
+                        <li class="footer-student-name">Student name</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#home-skills">skills</a></li>
+                        <li><a href="#home-portfolio">Portfolio</a></li>
+                        <li><a href="#home-contact">Contact</a></li>
+                    </ul>
+                </div>
+            </footer>
+    </body>
+</html>
